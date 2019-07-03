@@ -24,9 +24,15 @@
     "slug": "^0.9.1",
     "yamljs": "^0.2.3",
     "yeoman-generator": "^0.19.0",
-    "yosay": "^1.0.2"
+    "yosay": "^1.0.2",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "mocha": "*"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
